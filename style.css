@@ -1,0 +1,137 @@
+body{
+    margin: 0;
+    padding:0;
+    height: 100%;
+}
+
+.navbar{
+    background-color: #333;
+    overflow:hidden;
+    display:flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+   
+padding: 15px 20px;
+}
+.logo{
+    color: white;
+
+}
+
+.logo h1{
+    margin: 0;
+    font-size: 24px;
+
+}
+
+.nav-links a{
+    color: white;
+    text-decoration:none ;
+    padding: 15px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover{
+    color: blueviolet;
+
+}
+
+.maincontent{
+    height: 100vh;
+    background: url("https://images.pexels.com/photos/8001041/pexels-photo-8001041.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") center/
+    cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: hidden;
+}
+
+.content-overlay{
+    text-align: center;
+    word-spacing: 5px;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 20px;
+    background-color: rgb(0,0,0,0.5, green, blue);
+
+}
+
+.content-overlay h2{
+    font-weight: bold;
+
+} 
+
+.content-overlay p{
+    margin-top: 10px;
+
+}
+
+.get-started-button{
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+
+
+}
+ 
+.get-started-button:hover{
+    background-color: #555;
+    color: #ffd700;
+}
+
+.image{
+    display:block;
+    width: 100%;
+    height: auto;
+
+}
+
+.servicescard{
+position: relative;
+width: calc(33.333% - 20px);
+box-shadow: 0 4px 8px rgba(0,0,0,0.1) ;
+transition: boxshadow 0.3s ease;
+}
+
+.servicescard :hover{
+    box-shadow: 4.0px 8.0px 8.0px rgba(0,0,0,0.38);
+}
+
+.servicescontainer{
+    display: flex;
+    flex-wrap: wrap ;
+   gap: 20px;
+   margin:10px;
+
+}
+
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,140,186,0.7);
+    width: 100%;
+    overflow: hidden;
+    height:0;
+    transition: 0.5s ease;
+}
+
+.servicescard:hover .overlay{
+    height: 100%;
+}
+
+.text{
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    top: 30%;
+    text-align: center;
+}
